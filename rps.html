@@ -17,6 +17,19 @@
       font-size: 30px;
       font-weight: bold;
     }
+  
+    .move-icon{
+      height: 50px;
+    }
+
+    .move-button{
+      cursor: pointer;
+      background-color: transparent;
+      border: 3px solid white;
+      padding: 40px 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
 
   </style>
   
@@ -27,15 +40,15 @@
   
   <button onclick="
     playgame('rock')
-  "><img src="images/rock-emoji.png" alt="Rock"></button>
+  " class="move-button"><img class="move-icon" src="images/rock-emoji.png" alt="Rock"></button>
 
   <button onclick="
     playgame('paper')
-  ">Paper</button>
+  " class="move-button"><img class="move-icon" src="images/paper-emoji.png" alt="Paper"></button>
 
   <button onclick="
     playgame('scissors')
-  ">Scissors</button>
+  " class="move-button"><img class="move-icon" src="images/scissors-emoji.png" alt="Scissors"></button>
 
   <p class="js-result"></p>
   
