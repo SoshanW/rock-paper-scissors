@@ -29,6 +29,28 @@
       padding: 40px 40px;
       border-radius: 50%;
       margin-right: 10px;
+
+    }
+
+    .result{
+      margin-top: 50px;
+      font-size: 25px;
+      font-weight: bold;
+
+    }
+
+    .score{
+      margin-top: 50px;
+    }
+
+    .reset-score-button{
+      background-color: white;
+      border: none;
+      font-size: 15px;
+      padding: 8px 20px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 20px;;
     }
 
   </style>
@@ -50,11 +72,12 @@
     playgame('scissors')
   " class="move-button"><img class="move-icon" src="images/scissors-emoji.png" alt="Scissors"></button>
 
-  <p class="js-result"></p>
+  <p class="js-result result"></p>
   
-  <p class="js-moves"></p>
+  <p class="js-moves">
+  </p>
 
-  <p class="js-score"></p>
+  <p class="js-score score"></p>
 
   <button onclick="
     score.wins=0;
@@ -64,7 +87,7 @@
     updateScoreElement();
     document.querySelector('.js-result').innerHTML =``;
     document.querySelector('.js-moves').innerHTML =``;
-  ">Reset Score</button>
+  " class="reset-score-button">Reset Score</button>
 
   <script>
     
@@ -134,7 +157,10 @@
         .innerHTML =result;
 
       document.querySelector('.js-moves')
-        .innerHTML = `You ${playerMove} - ${computerMove} Computer`;
+        .innerHTML = `You
+    <img src="images/${playerMove}-emoji.png" alt="Rock" class="move-icon">
+    <img src="images/${computerMove}-emoji.png" alt="Scissors" class="move-icon">
+    Computer`;
 
     }
 
