@@ -7,6 +7,7 @@ body{
 .title{
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .move-icon{
@@ -23,15 +24,23 @@ body{
 
 }
 
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 75px;
+}
+
 .result{
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 25px;
   font-weight: bold;
-
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .score{
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .reset-score-button{
@@ -41,5 +50,24 @@ body{
   padding: 8px 20px;
   cursor: pointer;
   margin-top: 20px;
-  border-radius: 20px;;
+  border-radius: 20px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.reset-score-button:hover{
+  background-color: rgb(235, 234, 234);
+}
+
+.reset-btn-container{
+  display: block;
+  text-align: center;
+}
+
+.result-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
 }
