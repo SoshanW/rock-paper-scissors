@@ -43,7 +43,8 @@ body{
   margin-top: 20px;
 }
 
-.reset-score-button{
+.reset-score-button,
+.auto-play-button{
   background-color: white;
   border: none;
   font-size: 15px;
@@ -55,7 +56,8 @@ body{
   font-weight: bold;
 }
 
-.reset-score-button:hover{
+.reset-score-button:hover,
+.auto-play-button:hover{
   background-color: rgb(235, 234, 234);
 }
 
@@ -71,3 +73,4 @@ body{
   align-items: center;
   margin-top: 0;
 }
+
